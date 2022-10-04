@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".News_Recycler">
+
+   <com.google.android.material.appbar.AppBarLayout
+       android:id="@+id/design_id"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:ignore="MissingConstraints">
+
+       <com.google.android.material.appbar.CollapsingToolbarLayout
+           android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+           android:id="@+id/toolayout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:id="@+id/imgs"
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:src="@drawable/proline"
+                   android:fitsSystemWindows="true"
+                   android:scaleType="fitXY"/>
+
+
+           </RelativeLayout>
+
+           <androidx.appcompat.widget.Toolbar
+               android:id="@+id/bars"
+               android:layout_width="match_parent"
+               android:layout_height="?attr/actionBarSize"
+               app:contentScrim="?attr/colorPrimary"
+               app:title="@string/appbar_scrolling_view_behavior"
+               app:layout_collapseMode="pin"
+               android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+
+       </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+   </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:scrollbars="vertical"
+        android:padding="1dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+            <TextView
+                android:id="@+id/viewtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Content"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/viewtxt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+               android:layout_marginTop="45dp"
+                android:text="The 21 year old who can also play as a forward recently crossed to Odense Boldklub in the Danish Premier League following the relegation of his now former side Vendyssel FC."
+                android:textSize="20sp"
+                android:layout_marginLeft="16dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp">
+
+                <TextView
+                    android:id="@+id/full"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="60dp"
+                    android:text="The 21 year old who can also play as a forward recently crossed to Odense Boldklub in the Danish Premier League following the relegation of his now former side Vendyssel FC."
+                    android:textSize="20sp"
+                    android:layout_marginLeft="16dp" />
+
+            </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="250dp">
+
+             <TextView
+                 android:id="@+id/details"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="16dp"
+                 android:layout_marginTop="60dp"
+                 android:text="The 21 year old who can also play as a forward recently crossed to Odense Boldklub in the Danish Premier League following the relegation of his now former side Vendyssel FC."
+                 android:textSize="20sp"
+                 android:layout_marginLeft="16dp" />
+
+
+         </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp">
+
+                <TextView
+                    android:id="@+id/detai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="60dp"
+                    android:text="The 21 year old who can also play as a forward recently crossed to Odense Boldklub in the Danish Premier League following the relegation of his now former side Vendyssel FC."
+                    android:textSize="20sp"
+                    android:layout_marginLeft="16dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp">
+
+                <TextView
+                    android:id="@+id/detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="60dp"
+                    android:text="The 21 year old who can also play as a forward recently crossed to Odense Boldklub in the Danish Premier League following the relegation of his now former side Vendyssel FC."
+                    android:textSize="20sp"
+                    android:layout_marginLeft="16dp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

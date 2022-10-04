@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Tablematch">
+
+  <!-- TODO: Update blank fragment layout -->
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="90dp">
+    <TextView
+        android:id="@+id/head_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="#FF6F00"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:orientation="horizontal"
+      android:background="#444343">
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:id="@+id/position"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="#"
+        android:textSize="17dp"
+        android:layout_weight="2"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/team"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="Team"
+        android:textSize="17dp"
+        android:layout_weight="2"
+        android:textColor="#EEEEEE" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:id="@+id/played"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="Pl"
+        android:textSize="17dp"
+        android:layout_weight="1"
+        android:textColor="#EEEEEE" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/win"
+        android:gravity="center"
+        android:text="W"
+        android:textSize="17dp"
+        android:layout_weight="1"
+        android:textColor="#EEEEEE" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/doal"
+        android:gravity="center"
+        android:text="D"
+        android:textSize="17dp"
+        android:layout_weight="1"
+        android:textColor="#EEEEEE" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/loss"
+        android:gravity="center"
+        android:text="L"
+        android:textSize="17dp"
+        android:layout_weight="1"
+        android:textColor="#fff" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/games"
+        android:gravity="center"
+        android:text="+/-"
+        android:textSize="17dp"
+        android:layout_weight="1"
+        android:textColor="#EEEEEE" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/gd"
+        android:gravity="center"
+        android:text="GD"
+        android:textSize="17dp"
+        android:layout_weight="1"
+        android:textColor="#EEEEEE" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/points"
+        android:gravity="center"
+        android:text="Pts"
+        android:textSize="17dp"
+        android:layout_weight="1"
+        android:textColor="#EEEEEE" />
+
+  </LinearLayout>
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/table_results"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#181717"/>
+</LinearLayout>

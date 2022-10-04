@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginLeft="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/player_id"
+        android:src="@drawable/profile"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emmanuel "
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:id="@+id/name_id" />
+
+        <TextView
+            android:id="@+id/tm_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kcca"
+            android:textStyle="normal"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/flag"
+            android:id="@+id/flag"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/number"
+            android:textStyle="normal"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

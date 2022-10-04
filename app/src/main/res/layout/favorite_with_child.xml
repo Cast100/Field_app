@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/button_id"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_arrow_drop_up_black_24dp"/>
+
+    </RelativeLayout>
+    <TextView
+        android:text="Favorite League and Tournament"
+        android:padding="8dp"
+        android:id="@+id/textfavorite"
+        android:textColor="#292826"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/button_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+        android:id="@+id/expandable_id"
+        android:layout_below="@+id/textfavorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:ael_duration="300"
+        app:ael_expanded ="false"
+        app:ael_interpolator="bounce">
+
+    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+</RelativeLayout>

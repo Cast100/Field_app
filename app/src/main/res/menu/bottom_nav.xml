@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/match"
+        android:title="Matches"
+        android:icon="@drawable/fixtures"/>
+    <item
+        android:id="@+id/news"
+        android:title="News"
+        android:icon="@drawable/pk"/>
+    <item
+        android:id="@+id/league"
+        android:title="Leagues"
+        android:icon="@drawable/league"/>
+    <item
+        android:id="@+id/follow"
+        android:title="Favorites"
+        android:icon="@drawable/ic_stars"/>
+
+    <item
+        android:id="@+id/tickets"
+        android:title="Ticket"
+        android:icon="@drawable/ic_receipt_black_24"/>
+
+</menu>

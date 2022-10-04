@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.field">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".Odd" />
+        <activity android:name=".Favorite" />
+        <activity android:name=".Player_Follow" />
+        <activity android:name=".Team_Follow" />
+        <activity android:name=".follow_league" />
+        <activity android:name=".league_follow" />
+        <activity android:name=".leag" />
+        <activity
+            android:name=".Champ_win"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".News_Recycler"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".League_detalis"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Leagues" />
+        <activity android:name=".Match" />
+        <activity android:name=".Calendar" />
+        <activity android:name=".Tickets" />
+        <activity android:name=".toolnews" />
+        <activity android:name=".Tablestartime" />
+        <activity android:name=".Player_profile" />
+        <activity android:name=".StarTimeleague" />
+        <activity android:name=".Uni" />
+        <activity android:name=".Star2_Monday" />
+        <activity android:name=".Star1_Monday" />
+        <activity android:name=".Star_monday" />
+        <activity android:name=".amas_cardview" />
+        <activity
+            android:name=".friday_cardview"
+            android:parentActivityName=".Follow" />
+        <activity
+            android:name=".Navlayout"
+            android:label="@string/title_activity_navlayout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Follow" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

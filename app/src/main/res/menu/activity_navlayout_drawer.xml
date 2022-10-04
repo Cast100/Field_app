@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_remove"
+                android:icon="@drawable/ic_baseline_g_translate_24"
+                android:title="Remove ads" />
+
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_baseline_brightness_4_24"
+                android:title="Night  Mode"
+                app:actionLayout="@layout/drawer_switch"/>
+            
+            <item
+                android:id="@+id/nav_tools"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:title="Settings" />
+            <item
+                android:id="@+id/bet_id"
+                android:icon="@drawable/ic_baseline_analytics_24"
+                android:title="Odds" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_baseline_sports_volleyball_24"
+                android:title="About Us" />
+
+
+    </group>
+
+</menu>

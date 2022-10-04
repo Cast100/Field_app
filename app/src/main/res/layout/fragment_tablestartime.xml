@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".TablestartimeFragment">
+
+  <!-- TODO: Update blank fragment layout -->
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:background="#444343">
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:id="@+id/position"
+        android:gravity="center"
+        android:text="#"
+        android:textSize="20dp"
+        android:layout_weight="2"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/team"
+        android:gravity="center"
+        android:text="Team"
+        android:textSize="20dp"
+        android:layout_weight="2"
+        android:textColor="#EEEEEE" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:id="@+id/played"
+        android:gravity="center"
+        android:text="Pl"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:textColor="#EEEEEE" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:id="@+id/win"
+        android:gravity="center"
+        android:text="W"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:textColor="#EEEEEE" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:id="@+id/doal"
+        android:gravity="center"
+        android:text="D"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:textColor="#EEEEEE" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:id="@+id/loss"
+        android:gravity="center"
+        android:text="L"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:textColor="#fff" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:id="@+id/games"
+        android:gravity="center"
+        android:text="+/-"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:textColor="#EEEEEE" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:id="@+id/gd"
+        android:gravity="center"
+        android:text="GD"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:textColor="#EEEEEE" />
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:id="@+id/points"
+        android:gravity="center"
+        android:text="Pts"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:textColor="#EEEEEE" />
+
+  </LinearLayout>
+  <ListView
+      android:layout_width="fill_parent"
+      android:layout_height="match_parent"
+
+      android:id="@+id/listviewer">
+
+  </ListView>
+</LinearLayout>

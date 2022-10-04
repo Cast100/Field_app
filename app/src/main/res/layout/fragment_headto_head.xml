@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HeadtoHead">
+
+  <!-- TODO: Update blank fragment layout -->
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/click_linear"
+        android:layout_marginRight="30dp">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          android:background="@drawable/shape"
+          android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Matches"
+              android:textSize="17sp"
+              android:textColor="#FFFF"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="0.1dp"
+              android:background="#111111" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Tue, June 12"
+              android:textSize="15sp"
+              android:layout_marginLeft="35dp"
+              android:textColor="#FFFF"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Super League"
+              android:textSize="15sp"
+              android:layout_marginLeft="35dp"
+              android:textColor="#01579B"
+              android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="0dp"
+            android:gravity="center">
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:src="@drawable/onduparaka"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Onduparaka"
+              android:textSize="12sp"
+              android:layout_marginLeft="10dp"
+              android:textColor="#FFFF"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="3:00 PM"
+              android:textSize="12sp"
+              android:layout_marginLeft="20dp"
+              android:textColor="#FFFF"/>
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:src="@drawable/kcca"
+              android:layout_marginLeft="20dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Kcca"
+              android:textSize="12sp"
+              android:layout_marginLeft="10dp"
+              android:textColor="#FFFF"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="0.1dp"
+              android:background="#111111" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:orientation="horizontal">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Tue, June 12"
+              android:textSize="15sp"
+              android:layout_marginLeft="35dp"
+              android:textColor="#FFFF"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="StarTimes League"
+              android:textSize="15sp"
+              android:layout_marginLeft="35dp"
+              android:textColor="#01579B"
+              android:textStyle="italic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:src="@drawable/kcca"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Kcca"
+              android:textSize="12sp"
+              android:layout_marginLeft="10dp"
+              android:textColor="#FFFF"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="0 - 0 "
+              android:textSize="12sp"
+              android:layout_marginLeft="20dp"
+              android:textColor="#FFFF"/>
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:src="@drawable/onduparaka"
+              android:layout_marginLeft="20dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Onduparaka"
+              android:textSize="12sp"
+              android:layout_marginLeft="10dp"
+              android:textColor="#FFFF"/>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+
+</LinearLayout>

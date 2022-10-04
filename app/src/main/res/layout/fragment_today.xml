@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Today">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:layout_marginTop="110dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_gravity="center"
+                android:layout_height="240dp">
+
+                <LinearLayout
+                    android:background="@drawable/shape"
+                    android:layout_width="340dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp" tools:targetApi="m">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="38dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/star" />
+
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginTop="15dp"
+                                android:textColor="#ffffff"
+                                android:text="Star Time League"
+                                android:textSize="17sp"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:id="@+id/star_league"
+                                android:textStyle="bold"
+                                android:layout_alignParentStart="true" />
+
+                            <TextView
+                                android:id="@+id/txt_option"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="0dp"
+                                android:paddingLeft="@dimen/activity_horizontal_margin"
+                                android:text="&#8942;"
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:textColor="#ffffff"
+                                android:paddingStart="@dimen/activity_horizontal_margin" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.15dp"
+                            android:background="#111111" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/match_id"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/full_time">
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:text="FT"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="13sp"
+                                android:textColor="#151414"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tooro"
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/kcca" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/soccer_red">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0 - 0"
+                                android:textSize="18sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="18dp"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:gravity="center_horizontal" />
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/jinja" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jinja"
+
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/full_time">
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:text="FT"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="13sp"
+                                android:textColor="#151414"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bright"
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/bright" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/soccer_green">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="18dp"
+                                android:gravity="center_horizontal"
+                                android:text="1 - 0"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/bul" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bul"
+
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Paidha"
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/kcca" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3:00PM"
+
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/kcca" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kcca"
+
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_height="130dp">
+
+                <LinearLayout
+                    android:background="@drawable/shape"
+                    android:layout_width="340dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/images" />
+
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginTop="15dp"
+                                android:textColor="#ffffff"
+                                android:text="University League"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_alignParentStart="true" />
+
+                            <TextView
+                                android:id="@+id/txt_option2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="0dp"
+                                android:paddingLeft="@dimen/activity_horizontal_margin"
+                                android:text="&#8942;"
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:textColor="#ffffff" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="#111111" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/full_time">
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:text="FT"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="13sp"
+                                android:textColor="#151414"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="KIU"
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/kcca" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/soccer_green">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2 - 1"
+                                android:textSize="18sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="18dp"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:gravity="center_horizontal" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/kcca" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="UCU"
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_height="130dp">
+
+                <LinearLayout
+                    android:background="@drawable/shape"
+                    android:layout_width="340dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/kcca" />
+
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginTop="18dp"
+                                android:textColor="#ffffff"
+                                android:text="Buganda Region"
+                                android:textSize="16sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txt_option3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="0dp"
+                                android:paddingLeft="@dimen/activity_horizontal_margin"
+                                android:text="&#8942;"
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:textColor="#ffffff"
+                                android:paddingStart="@dimen/activity_horizontal_margin" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:background="#111111" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="T.Y Lugazi"
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/kcca" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4:00PM"
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/pennant" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kikyusa Cream"
+                            android:textSize="16sp"
+                            android:textColor="#ffffff"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
